@@ -1,18 +1,17 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
+[ yes ] Add Five CSS Declarations 
+[ yes ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[ yes ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -22,39 +21,85 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="mem1-button">Self Portraits</button>
+    <button id="mem2-button">AI Piece</button>
+    <button id="mem3-button">In Progress Painting</button>
+    <h1>2025 FAVORITE <span> ARTWORKS!</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">Self Portraits 1 and 2</h3>
+        <p class="SelfPor" style="display: none">
+          In the beginning of the year I made two self portraits, one in color
+          and one monochromatic. I am going to try and recreate these at the end
+          of the year to see how much I grow!
+        </p>
+        <img
+          width="400"
+          class="SelfPor12"
+          style="display: none"
+          src="https://mail.google.com/mail/u/0?ui=2&ik=6c6fb844eb&attid=0.2&permmsgid=msg-a:r4665432321617651452&th=1968e9b207e2538b&view=fimg&fur=ip&permmsgid=msg-a:r4665432321617651452&sz=s0-l75-ft&attbid=ANGjdJ-9i8t6CG2GbV09l4I9JLUJttzFntP5SsaBp4N1ct9CUQ8bBABY9VGYSrz_RdhUCXBQaoTUES51XsmP7PaqNb1pA-N-_jwWjN6DyKc7sX6A3bqGChXbjGkeNLw&disp=emb&realattid=ii_1968e9b179f2710aeed2&zw"
+          <=""
+          li=""
+        />
       </li>
-
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">AI Piece for Digital Media</h3>
+        <p class="AI" style="display: none">
+          My illustration shows a monstrous AI hand crushing a ball in a
+          traditional still life, symbolizing how AI is killing traditional art
+          and the practice of making art by hand. The cracks in the ball mirror
+          the shapes of Earth's continents, hinting that AI's damage will spread
+          far beyond the art world. Overheating computer servers use huge
+          amounts of electricity and release carbon emissions that harm our
+          atmosphere. They also waste millions of gallons of water for cooling,
+          draining natural resources. We must regulate tech companies before AI
+          destroys the natural systems all life depends on.
+        </p>
+        <img
+          width="300"
+          class="AIDrawing"
+          style="display: none"
+          src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNLTTmLeKIhvGyerdbJCuo7DKZfcQbMaG0iNjHnK4Jdg5zugR48rMPfSOzNOAQom7s7imfAgE_bTUfYnOZFyDmSCnmuwHSwOw3Z--MCODBdudg=w2844-h1533"
+          <=""
+          li=""
+        />
       </li>
-
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">Grace In Progress Painting</h3>
+        <p class="Grace" style="display: none">
+          This is an oil painting of my friend Grace that I have been working on
+          for about 5 months now! Im very happy with how its looking so far,
+          just need to find time to finish.
+        </p>
+        <img
+          width="300"
+          class="GracePic"
+          style="display: none"
+          src="https://mail.google.com/mail/u/0?ui=2&ik=6c6fb844eb&attid=0.1&permmsgid=msg-a:r4665432321617651452&th=1968e9b207e2538b&view=fimg&fur=ip&permmsgid=msg-a:r4665432321617651452&sz=s0-l75-ft&attbid=ANGjdJ9ZdfFHZZRUwR4LsdeMv48JMGYLozNtmiurDQ_uo29pqpnzIJYBfdL2sDdWLvaFxmub4VQxu80IQExBbKWI1C5U5sT6CUnfrFzDrcF0eREw6J9Til-FPfobmW0&disp=emb&realattid=ii_1968e9a16364a47dec1&zw"
+          <=""
+          li=""
+        />
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "Purple");
+        $(".SelfPor").show(2000);
+        $(".SelfPor12").show(2000);
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "Purple");
+        $(".AI").show(2000);
+        $(".AIDrawing").slideDown(2000);
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "Purple");
+        $(".Grace").show(2000);
+        $(".GracePic").fadeIn(2000);
       });
     </script>
   </body>

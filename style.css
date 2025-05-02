@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
 html {
-  background-color: white;
-  padding-left: 20px;
+  background-image: url("https://t4.ftcdn.net/jpg/04/53/63/07/360_F_453630770_N9UkWkDVZGC9AA91ohlKhdjDMMNhBQbU.jpg");
+  padding-left: 30px;
 }
 
-img{
-  border-radius: 30px;
+img {
+  border-radius: 40px;
 }
 
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Impact", sans-serif;
+  color: white;
+}
+
+h3 {
+  font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: White;
+}
+
+p {
+  font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: White;
 }
